@@ -24,7 +24,7 @@ ol {
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 10vh 35vh;
+    grid-template-rows: 10vh 50vh;
 }
 
 .titulo-header {
