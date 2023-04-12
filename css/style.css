@@ -1,0 +1,254 @@
+/*------------------------------ CSS General ------------------------------*/
+* {
+    margin: 0px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+
+/*------------------------------ Componentes ------------------------------*/
+/* HEADER */
+
+.header {
+    color: #231942;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 10vh 35vh;
+}
+
+.titulo-header {
+    color: #5e548e;
+    grid-column: span 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.barra-buscar {
+    display: none;
+}
+
+.nav-header {
+    background-color: #e0b1cb;
+    border-radius: 10px;
+    grid-column: span 4;
+    color: #231942;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-header {
+    color: #5e548e;
+    font-weight: bold;
+    text-align: center;
+}
+
+.selection-page{
+    background-color: #be95c4;
+    color: #473f69;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(min-width: 1200px){
+.header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo-header{
+    color: #5e548e;
+
+}
+
+.barra-buscar{
+    display: flex;
+    align-items: center;
+}
+
+.nav-header{
+    background-color: #e0b1cb;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    color: #231942;
+    font-weight: bold;
+    gap: 20px;
+}
+
+.lista-header{
+    display: flex;
+}
+
+.item-header{
+    color: #5e548e;
+    font-weight: bold;
+}
+
+.selection-page{
+    background-color: #be95c4;
+    color: #473f69;
+    border-radius: 10px;
+}
+}
+
+/* MAIN */
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.titulo-importante {
+    font-size: 20px;
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pie-pagina {
+    color: #473f69;
+}
+
+.redes {
+    color: #be95c4;
+}
+
+/*------------------------------ Páginas ------------------------------*/
+
+/* Style de INDEX/HOME */
+
+.seccion-recetas-index {
+    text-align: right;
+    background-size: cover;
+    background-image: url("../img/perro-premio.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30px;
+}
+
+.articulos-index {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.articulo{
+    grid-column: span 2;
+}
+
+.seccion-contenido {
+    text-align: right;
+    background-size: cover;
+    background-image: url("../img/tres-perros.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30px;
+}
+
+@media(min-width: 1200px){
+    .articulos-index {
+        display: flex;
+    }
+}
+
+/* Style de RECETAS */
+
+.seccion-receta {
+    display: flex;
+}
+
+.titulo-comida {
+    display: flex;
+    justify-content: center;
+}
+
+.ingredientes-pasos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.puntos {
+    list-style-type: circle;
+}
+
+/* Style de TIPS */
+
+#tip-cachorros {
+    text-align: left;
+    background-size: cover;
+    background-image: url("../img/cachorro.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2em 1em;
+    border-radius: 20px;
+    border: solid 10px white;
+}
+
+#tip-juegos {
+    text-align: right;
+    background-size: contain;
+    background-image: url("../img/juegos-interactivos.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2em 1em;
+    border: solid 10px white;
+}
+
+#tip-entrenamiento {
+    text-align: left;
+    background-size: contain;
+    background-image: url("../img/entrenamiento.jpg");
+    background-repeat: repeat;
+    background-position: center;
+    padding: 2em 1em;
+    border-radius: 20px;
+    border: solid 10px white;
+}
+
+.parrafos-tips {
+    display: flex;
+}
+
+/* Style de nosotros */
+
+.seccion-nosotros {
+    display: flex;
+}
+
+/* Style de Contacto */
+
+.seccion-contacto {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ubicacion {
+    display: flex;
+    justify-content: center;
+}
