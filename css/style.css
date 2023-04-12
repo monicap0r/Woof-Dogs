@@ -118,6 +118,7 @@ ol {
 h2 {
     display: flex;
     justify-content: center;
+    color: #5e548e;
 }
 
 .titulo-importante {
@@ -142,6 +143,11 @@ h2 {
 /*------------------------------ Páginas ------------------------------*/
 
 /* Style de INDEX/HOME */
+
+.h2-index{
+    color: black;
+    font-size: 30px;
+}
 
 .seccion-recetas-index {
     text-align: right;
@@ -197,7 +203,7 @@ h2 {
     list-style-type: circle;
 }
 
-/* Style de TIPS */
+/* Style de SERVICIOS */
 
 #tip-cachorros {
     text-align: left;
