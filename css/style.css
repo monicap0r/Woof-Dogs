@@ -62,7 +62,7 @@ ol {
     text-align: center;
 }
 
-.selection-page{
+.selection-page {
     background-color: #be95c4;
     color: #473f69;
     border-radius: 10px;
@@ -71,46 +71,46 @@ ol {
     align-items: center;
 }
 
-@media(min-width: 1200px){
-.header {
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-}
+@media(min-width: 1200px) {
+    .header {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
 
-.titulo-header{
-    color: #5e548e;
+    .titulo-header {
+        color: #5e548e;
 
-}
+    }
 
-.barra-buscar{
-    display: flex;
-    align-items: center;
-}
+    .barra-buscar {
+        display: flex;
+        align-items: center;
+    }
 
-.nav-header{
-    background-color: #e0b1cb;
-    padding: 0.5em 1em;
-    border-radius: 10px;
-    color: #231942;
-    font-weight: bold;
-    gap: 20px;
-}
+    .nav-header {
+        background-color: #e0b1cb;
+        padding: 0.5em 1em;
+        border-radius: 10px;
+        color: #231942;
+        font-weight: bold;
+        gap: 20px;
+    }
 
-.lista-header{
-    display: flex;
-}
+    .lista-header {
+        display: flex;
+    }
 
-.item-header{
-    color: #5e548e;
-    font-weight: bold;
-}
+    .item-header {
+        color: #5e548e;
+        font-weight: bold;
+    }
 
-.selection-page{
-    background-color: #be95c4;
-    color: #473f69;
-    border-radius: 10px;
-}
+    .selection-page {
+        background-color: #be95c4;
+        color: #473f69;
+        border-radius: 10px;
+    }
 }
 
 /* MAIN */
@@ -140,11 +140,21 @@ h2 {
     color: #be95c4;
 }
 
+.icon-huella-foot {
+    width: 50px;
+}
+
+@media(min-width: 1200px) {
+    .icon-huella-foot {
+        width: 150px;
+    }
+}
+
 /*------------------------------ Páginas ------------------------------*/
 
 /* Style de INDEX/HOME */
 
-.h2-index{
+.h2-index {
     color: black;
     font-size: 30px;
 }
@@ -164,7 +174,7 @@ h2 {
     grid-template-rows: repeat(2, 1fr);
 }
 
-.articulo{
+.articulo {
     grid-column: span 2;
 }
 
@@ -177,7 +187,7 @@ h2 {
     padding: 30px;
 }
 
-@media(min-width: 1200px){
+@media(min-width: 1200px) {
     .articulos-index {
         display: flex;
     }
