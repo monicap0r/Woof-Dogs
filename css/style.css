@@ -168,6 +168,11 @@ h2 {
     padding: 30px;
 }
 
+.fondo-letra{
+    background-color: rgba(255, 255, 255, 0.384);
+    border-radius: 10px;
+}
+
 .articulos-index {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
