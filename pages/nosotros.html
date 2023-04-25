@@ -6,19 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../styles/css/style.css">
     <link rel="icon" type="image/x-icon" href="../img/huella.png">
     <title>Woof Dogs</title>
 </head>
 
 <body>
-
-    <!-- ENCABEZADO PÁGINA QUIENES SOMOS-->
+    <!------------------------------ ENCABEZADO ------------------------------>
 
     <header class="header">
-        <div class="titulo-header">
-            <h1>WOOF DOGS</h1>
-        </div>
+        <h1 class="titulo-header">WOOF DOGS</h1>
 
         <figure class="icon-header">
             <img src="../img/huella.png" alt="icon huella" width="40">
@@ -29,98 +26,107 @@
                 <li class="item-header"><a href="../index.html">Home</a></li>
                 <li class="item-header"><a href="./recetas.html">Recetas</a></li>
                 <li class="item-header"><a href="./tips.html">Servicios</a></li>
-                <li class="selection-page">Quienes Somos</li>
+                <li><span class="selection-page">Nosotros</span></li>
                 <li class="item-header"><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
 
         <form action="" class="barra-buscar">
-            <input type="search" placeholder="Buscar...">
-            <input type="submit" value="enviar">
+            <input class="caja" type="search" placeholder="Buscar...">
+            <input class="boton" type="submit" value="enviar">
         </form>
 
     </header>
 
+    <!------------------------------ CONTENIDO PÁGINA NOSOTROS ------------------------------>
+
     <main>
 
-        <!-- CONTENIDO PÁGINA QUIENES SOMOS-->
-
-
-        <h2>Conoce más de nosotros</h2>
+        <h2 class="nosotros">Conoce más de nosotros</h2>
 
         <section class="seccion-nosotros">
             <article>
-                <h3>Nuestra Unión</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium consequuntur vitae asperiores ab
-                    nulla incidunt obcaecati placeat delectus expedita? Fugiat nostrum placeat illo quisquam ipsa nisi
-                    suscipit, praesentium debitis odio?</p>
-            </article>
-            <figure>
-                <img src="../img/pom.jpg" alt="Labrador chocolate lamiendose la nariz en una calle" width="200">
-                <figcaption>por Denys Sergushkin en unsplash</figcaption>
-            </figure>
-        </section>
+                <h3 class="titulo">Nosotros</h3>
 
-        <section class="seccion-nosotros">
-            <article>
-                <h3>Veterinario</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium consequuntur vitae asperiores ab
-                    nulla incidunt obcaecati placeat delectus expedita? Fugiat nostrum placeat illo quisquam ipsa nisi
-                    suscipit, praesentium debitis odio?</p>
-            </article>
-            <figure>
-                <img src="../img/vet.jpg" alt="Labrador chocolate lamiendose la nariz en una calle" width="200">
-                <figcaption>por Karlo Tottoc en unsplash</figcaption>
-            </figure>
-        </section>
+                <p>Somos dos amantes de los animales que decidimos crear este lugar para ayudar y cuidar al mejor amigo
+                    del hombre, el perro, estamos especializados en veterinaria y peluqieria canina, dedicados a darles
+                    amor y crear la mejor experiencia para el animal.</p>
 
-        <section class="seccion-nosotros">
-            <article>
-                <h3>Baño y Peluqueria</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium consequuntur vitae asperiores ab
-                    nulla incidunt obcaecati placeat delectus expedita? Fugiat nostrum placeat illo quisquam ipsa nisi
-                    suscipit, praesentium debitis odio?</p>
+                <img class="tamanio-img" src="../img/pom.jpg" alt="perro pomeranian sonriente">
+                <figcaption>by Denys Sergushkin</figcaption>
             </article>
-            <figure>
-                <img src="../img/corte.jpg" alt="Labrador chocolate lamiendose la nariz en una calle" width="200">
-                <figcaption>por Hayffield L en unsplash</figcaption>
-            </figure>
+
+            <article>
+                <h3 class="titulo">Veterinario</h3>
+
+                <p>Mi nombre es José tengo 15 años de experiencia en veterinaria, duarante estos años atendí a muchos
+                    animales y mi objetivo es cuidar a todos mis pacientes para poder verlos toda su vida felices y
+                    saludables. Tengo un equipo especializado que me acompaña que trabaja alegre por seguir nuestra meta
+                    de ayudar y cuidar perros.</p>
+
+                <img class="tamanio-img" src="../img/vet.jpg" alt="veterniario atendiendo a perro">
+                <figcaption>by Karlo Tottoc</figcaption>
+            </article>
+
+            <article>
+                <h3 class="titulo">Baño y Peluquería</h3>
+
+                <p>El equipo de baño y peluqueria está liderado por Maria experta en grooming, este trabajo se realiza
+                    con amor y cariño, queremos que nuestros clientes sean nuestros amigos y queremos que se lleven una
+                    linda experiencia, sin miedos ni dolores.</p>
+
+                <img class="tamanio-img" src="../img/corte.jpg" alt="perro con una toalla en la cabeza">
+                <figcaption>by Hayffield L</figcaption>
+            </article>
         </section>
 
     </main>
 
-    <hr>
-
-    <!-- FOOTER PÁGINA QUIENES SOMOS  -->
+    <!------------------------------ FOOTER ------------------------------>
 
     <footer class="footer">
+
+        <!-- Redes Sociales -->
+
+        <div class="redes">
+            <h3 class="foot-titles">SÍGUENOS</h3>
+            <ul class="foot-items-r">
+                <i class="bi bi-twitter"></i>
+                <li class="r-item">Twitter</li>
+                <i class="bi bi-facebook"></i>
+                <li class="r-item">Facebook</li>
+                <i class="bi bi-instagram"></i>
+                <li class="r-item">Instagram</li>
+                <i class="bi bi-tiktok"></i>
+                <li class="r-item">TikTok</li>
+                <i class="bi bi-youtube"></i>
+                <li class="r-item">Youtube</li>
+            </ul>
+        </div>
+
+        <!-- Pie de página -->
+
         <div class="pie-pagina">
-            <h3>WOOF DOGS</h3>
-            <ul>
+            <h3 class="foot-titles">WOOF DOGS</h3>
+            <ul class="foot-items">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="./recetas.html">Recetas</a></li>
                 <li><a href="./tips.html">Servicios</a></li>
-                <li><a href="./nosotros.html">Quienes Somos</a></li>
+                <li class="item-footer"><a href="./nosotros.html">Nosotros</a></li>
                 <li><a href="./contacto.html">Contacto</a></li>
             </ul>
         </div>
 
-        <div class="redes">
-            <h3>SÍGUENOS</h3>
-            <ul>
-                <li><i class="bi bi-twitter"></i><a>Twitter</a></li>
-                <li><i class="bi bi-facebook"></i><a>Facebook</a></li>
-                <li><i class="bi bi-instagram"></i><a>Instagram</a></li>
-                <li><i class="bi bi-tiktok"></i><a>TikTok</a></li>
-                <li><i class="bi bi-youtube"></i><a>Youtube</a></li>
-            </ul>
+        <!-- Logo huella -->
+
+        <div class="logo">
+            <img class="icon-huella-foot" src="../img/huella.png" alt="icon huella">
+            <p class="derechos"> Woof Dogs © 2023 </p>
         </div>
 
-        <figure>
-            <img src="../img/huella.png" alt="icon huella" width="120" >
-        </figure>
 
     </footer>
+
 </body>
 
 </html>

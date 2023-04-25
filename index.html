@@ -5,20 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./styles/css/style.css">
     <link rel="icon" type="image/x-icon" href="./img/huella.png">
     <title>Woof Dogs</title>
 </head>
 
 <body>
-
-    <!-- ENCABEZADO PÁGINA HOME-->
+    <!------------------------------ ENCABEZADO ------------------------------>
 
     <header class="header">
-        <div class="titulo-header">
-            <h1>WOOF DOGS</h1>
-        </div>
+        <h1 class="titulo-header">WOOF DOGS</h1>
 
         <figure class="icon-header">
             <img src="./img/huella.png" alt="icon huella" width="40">
@@ -26,62 +23,61 @@
 
         <nav class="nav-header">
             <ul class="lista-header">
-                <li class="selection-page">Home</li>
+                <li><span class="selection-page">Home</span></li>
                 <li class="item-header"><a href="./pages/recetas.html">Recetas</a></li>
                 <li class="item-header"><a href="./pages/tips.html">Servicios</a></li>
-                <li class="item-header"><a href="./pages/nosotros.html">Quienes Somos</a></li>
+                <li class="item-header"><a href="./pages/nosotros.html">Nosotros</a></li>
                 <li class="item-header"><a href="./pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
 
         <form action="" class="barra-buscar">
-            <input type="search" placeholder="Buscar..."><!-- en el place holder se puede poner un icono?       -->
-            <input type="submit" value="enviar">
+            <input class="caja" type="search" placeholder="Buscar...">
+            <input class="boton" type="submit" value="Enviar">
         </form>
 
     </header>
 
-    <main>
+    <!------------------------------ CONTENIDO PÁGINA HOME ------------------------------>
 
-        <!-- CONTENIDO PÁGINA HOME-->
+    <main>
 
         <section class="seccion-recetas-index">
             <h2 class="h2-index">Recetas</h2>
             <article class="fondo-letra">
                 <h3 class="titulo-importante">NUEVO</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi repudiandae quam
-                    magni eaque
-                    quibusdam dolorum doloribus. Impedit temporibus, vitae, labore a et illo aut numquam, excepturi quos
-                    voluptatem praesentium? Rerum.</p>
+                <p>Tenemos recetas nuevas y nutritivas para tus perros. Ofrecemos variedad de presentaciones que sirven
+                    de premios para que no se aburran de comer siempre lo mismo, recetas con verduras, frutas y
+                    proteinas que ayudan a la dieta de tu perro.</p>
             </article>
         </section>
 
         <div class="articulos-index">
             <article class="articulo">
                 <h4>Consejos para ti</h4>
-                <p class="parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi repudiandae quam
-                    magni eaque
-                    quibusdam dolorum doloribus. Impedit temporibus, vitae, labore a et illo aut numquam, excepturi quos
-                    voluptatem praesentium? Rerum.</p>
+                <p class="parrafo">En este blog encontrarás consejos que nos pueden servir a todos los dueños de los
+                    perros, para que crezcan contigo y te ayuden a vivir en paz y armonía con tu animal de compañía.
+                    Estos consejos van dirigidos a todo dueño que ame, también para los padres perrunos primerizos que
+                    quieran saber diferentes consejos para ayudarlos a crecer de la mejor manera.</p>
             </article>
 
-            <figure>
+            <figure class="img-imagen">
                 <img src="./img/perro-plato.jpg" alt="Perro dorado con plato al frente" width="200">
-                <figcaption>Perro con plato por Flouffy a unsplash</figcaption>
+                <figcaption>By Flouffy - unsplash</figcaption>
             </figure>
 
             <article class="articulo">
                 <h4>Servicios</h4>
-                <p class="parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi repudiandae quam
-                    magni eaque
-                    quibusdam dolorum doloribus. Impedit temporibus, vitae, labore a et illo aut numquam, excepturi quos
-                    voluptatem praesentium? Rerum.</p>
+                <p class="parrafo">Nuestra plataforma está directamente enlazada con la veterinaria Woof Dogs creada
+                    para el cuidado de tu compañia, en esta ofrecemos servicios de veterinaria, baño, peluquería y
+                    guardería. Tenemos personal autorizado y muy estudiado para que tu compañero esté en las mejores
+                    manos y le encante estar con nosotros cuando lo necesite.</p>
             </article>
 
-            <figure>
+            <figure class="img-imagen">
                 <img src="./img/perro-rosa.jpg" alt="Golden Retriver adolescente con un tulipan amarillo en el hocico"
                     width="200">
-                <figcaption>Perro con flor subido por Richard Brutyo a unsplash</figcaption>
+                <figcaption>By Richard Brutyo - unsplash</figcaption>
             </figure>
 
         </div>
@@ -89,50 +85,59 @@
         <section class="seccion-contenido">
             <h2 class="h2-index">Contenido</h2>
             <article class="fondo-letra">
-                <h3 class="titulo-importante">NUEVO</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi repudiandae quam
-                    magni eaque
-                    quibusdam dolorum doloribus. Impedit temporibus, vitae, labore a et illo aut numquam, excepturi quos
-                    voluptatem praesentium? Rerum.</p>
+                <h3 class="titulo-importante">NOVEDADES ABRIL</h3>
+                <p>Reunión mensual en el parque del chicó donde realizamos clases de yoga y consejos de adiestramiento,
+                    esta actividad se desarrolla el último domingo de cada mes.</p>
 
             </article>
         </section>
 
     </main>
 
-    <hr>
-
-    <!-- FOOTER INDEX  -->
+    <!------------------------------ FOOTER ------------------------------>
 
     <footer class="footer">
+
+        <!-- Redes Sociales -->
+
+        <div class="redes">
+            <h3 class="foot-titles">SÍGUENOS</h3>
+            <ul class="foot-items-r">
+                <i class="bi bi-twitter"></i>
+                <li class="r-item">Twitter</li>
+                <i class="bi bi-facebook"></i>
+                <li class="r-item">Facebook</li>
+                <i class="bi bi-instagram"></i>
+                <li class="r-item">Instagram</li>
+                <i class="bi bi-tiktok"></i>
+                <li class="r-item">TikTok</li>
+                <i class="bi bi-youtube"></i>
+                <li class="r-item">Youtube</li>
+            </ul>
+        </div>
+
+        <!-- Pie de página -->
+
         <div class="pie-pagina">
-            <h3>WOOF DOGS</h3>
-            <ul>
-                <li><a href="#header-index">Home</a></li>
+            <h3 class="foot-titles">WOOF DOGS</h3>
+            <ul class="foot-items">
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="./pages/recetas.html">Recetas</a></li>
                 <li><a href="./pages/tips.html">Servicios</a></li>
-                <li><a href="./pages/nosotros.html">Quienes Somos</a></li>
+                <li class="item-footer"><a href="./pages/nosotros.html">Nosotros</a></li>
                 <li><a href="./pages/contacto.html">Contacto</a></li>
             </ul>
         </div>
 
-        <div class="redes">
-            <h3>SÍGUENOS</h3>
-            <ul>
-                <li><i class="bi bi-twitter"></i></i><a>Twitter</a></li>
-                <li><i class="bi bi-facebook"></i><a>Facebook</a></li>
-                <li><i class="bi bi-instagram"></i><a>Instagram</a></li>
-                <li><i class="bi bi-tiktok"></i><a>TikTok</a></li>
-                <li><i class="bi bi-youtube"></i><a>Youtube</a></li>
-            </ul>
+        <!-- Logo huella -->
+
+        <div class="logo">
+            <img class="icon-huella-foot" src="./img/huella.png" alt="icon huella">
+            <p class="derechos"> Woof Dogs © 2023 </p>
         </div>
 
-        <figure>
-            <img src="./img/huella.png" alt="icon huella" class="icon-huella-foot">
-        </figure>
-
     </footer>
-    
+
 </body>
 
 </html>
