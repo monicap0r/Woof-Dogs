@@ -1,275 +1,480 @@
-/*------------------------------ CSS General ------------------------------*/
 * {
-    margin: 0px;
-    padding: 10px;
-    box-sizing: border-box;
-    font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul,
 ol {
-    list-style-type: none;
+  list-style-type: none;
 }
 
+h2 {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  color: #5e548e;
+}
 
-/*------------------------------ Componentes ------------------------------*/
-/* HEADER */
+.titulo-importante {
+  font-size: 20px;
+  font-weight: 540;
+}
+
+.h2-index {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.seccion-recetas-index {
+  text-align: justify;
+  background-size: cover;
+  background-image: url("../../../img/perro-premio.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px;
+}
+
+.articulos-index {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  text-align: justify;
+  padding: 5px;
+}
+
+.articulo {
+  grid-column: span 2;
+  padding: 15px;
+}
+
+.img-imagen {
+  display: grid;
+  margin: 0;
+  align-content: center;
+  justify-content: center;
+}
+
+.seccion-contenido {
+  text-align: justify;
+  padding: 30px;
+  background-size: cover;
+  background-image: url("../../../img/tres-perros.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fondo-letra {
+  background-color: rgba(206, 145, 255, 0.6352941176);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+@media (min-width: 1200px) {
+  .articulos-index {
+    display: flex;
+  }
+}
+.titulo-recetas {
+  text-align: center;
+  font-size: 2rem;
+  background-size: cover;
+  background-image: url("../../../img/perro-lengua.jpg");
+  background-position: center;
+  padding: 2em 1em;
+  border-radius: 20px;
+  border: solid 10px white;
+}
+
+.seccion-receta {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 2fr 4fr;
+  grid-template-areas: "lspace texto texto rspace" "lspace texto texto rspace" "img img img img";
+  gap: 5px;
+}
+
+.texto-recetas {
+  display: grid;
+  grid-area: texto;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 3fr;
+  grid-template-areas: "titulo" "ingredientes" "pasos";
+  gap: 5px;
+  align-content: space-around;
+}
+
+.titulo-comida {
+  display: grid;
+  grid-area: titulo;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.section-ingredientes {
+  display: grid;
+  grid-area: ingredientes;
+  align-content: center;
+  justify-items: center;
+}
+
+.section-pasos {
+  display: grid;
+  grid-area: pasos;
+  align-content: center;
+  justify-items: center;
+}
+
+.img-insta {
+  display: grid;
+  grid-area: img;
+  align-content: center;
+  justify-content: center;
+}
+
+.tips-servicios {
+  text-align: center;
+  font-size: 2rem;
+  background-size: cover;
+  background-image: url("../../../img/perro-fondo.jpg");
+  background-position: center;
+  padding: 2em 1em;
+  border-radius: 20px;
+  border: solid 10px white;
+}
+
+.cap-card {
+  font-weight: bold;
+  padding: 5px;
+}
+
+.descripcion-tip {
+  color: #5e548e;
+  font-size: 1rem;
+  padding: 1em;
+  text-align: justify;
+}
+
+.imagen-articulo {
+  padding: 1em;
+}
+
+.tamanio-img {
+  width: 100%;
+}
+
+.figure-caption {
+  text-align: center;
+  font-style: italic;
+  color: #231942;
+}
+
+.nosotros {
+  text-align: center;
+  font-size: 2rem;
+  background-size: cover;
+  background-image: url("../../../img/juegos-interactivos.jpg");
+  background-position: center;
+  padding: 2em 1em;
+  border-radius: 20px;
+  border: solid 10px white;
+}
+
+.seccion-nosotros {
+  border: solid 10px white;
+  text-align: center;
+}
+
+.titulo {
+  padding: 10px;
+}
+
+.seccion-contacto {
+  padding: 20px;
+  justify-content: center;
+}
+
+.visit {
+  text-align: justify;
+}
+
+.ubicacion {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-linea {
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+}
+
+.boton-centro {
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+}
 
 .header {
-    color: #231942;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 10vh 50vh;
+  font-family: "Poppins", Tahoma, Geneva, Verdana, sans-serif;
+  color: #231942;
+  display: grid;
+  grid-template-columns: repeat 5, 1fr;
+  grid-template-rows: 0.5fr 1fr;
+  grid-template-areas: "lspace header header icon rspace" "lspace nav nav nav rspace";
+  gap: 10px;
+  padding: 10px;
 }
 
 .titulo-header {
-    color: #5e548e;
-    grid-column: span 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  color: #5e548e;
+  font-weight: bold;
+  font-family: "Poppins", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  grid-area: header;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
 }
 
 .icon-header {
-    display: flex;
-    justify-content: start;
-    align-items: center;
+  display: flex;
+  grid-area: icon;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
 }
 
 .barra-buscar {
-    display: none;
+  display: none;
 }
 
 .nav-header {
-    background-color: #e0b1cb;
-    border-radius: 10px;
-    grid-column: span 4;
-    color: #231942;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #e0b1cb;
+  border-radius: 15px;
+  color: #231942;
+  display: flex;
+  grid-area: nav;
+  justify-content: center;
+}
+
+.lista-header {
+  margin: 0;
+  padding-left: 0;
 }
 
 .item-header {
-    color: #5e548e;
-    font-weight: bold;
-    text-align: center;
+  text-decoration: none;
+  font-family: "Poppins", Tahoma, Geneva, Verdana, sans-serif;
+  color: #5e548e;
+  display: grid;
+  align-items: center;
+  justify-items: center;
 }
 
 .selection-page {
+  font-family: "Poppins", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #be95c4;
+  border-radius: 15px;
+  color: #473f69;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+@media (min-width: 1200px) {
+  .header {
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .titulo-header {
+    color: #5e548e;
+  }
+  .barra-buscar {
+    display: flex;
+    align-items: center;
+  }
+  .nav-header {
+    background-color: #e0b1cb;
+    border-radius: 10px;
+    color: #231942;
+    font-weight: bold;
+    gap: 20px;
+  }
+  .lista-header {
+    display: flex;
+  }
+  .item-header {
+    color: #5e548e;
+    font-weight: bold;
+    justify-content: space-around;
+    display: flex;
+    padding: 15px;
+  }
+  .selection-page {
     background-color: #be95c4;
     color: #473f69;
     border-radius: 10px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 15px;
+  }
 }
-
-@media(min-width: 1200px) {
-    .header {
-        padding: 20px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .titulo-header {
-        color: #5e548e;
-
-    }
-
-    .barra-buscar {
-        display: flex;
-        align-items: center;
-    }
-
-    .nav-header {
-        background-color: #e0b1cb;
-        padding: 0.5em 1em;
-        border-radius: 10px;
-        color: #231942;
-        font-weight: bold;
-        gap: 20px;
-    }
-
-    .lista-header {
-        display: flex;
-    }
-
-    .item-header {
-        color: #5e548e;
-        font-weight: bold;
-    }
-
-    .selection-page {
-        background-color: #be95c4;
-        color: #473f69;
-        border-radius: 10px;
-    }
-}
-
-/* MAIN */
-
-h2 {
-    display: flex;
-    justify-content: center;
-    color: #5e548e;
-}
-
-.titulo-importante {
-    font-size: 20px;
-}
-
-/* FOOTER */
-
 .footer {
-    display: flex;
-    justify-content: space-between;
-}
-
-.pie-pagina {
-    color: #473f69;
+  justify-content: space-between;
+  padding: 30px;
 }
 
 .redes {
-    color: #be95c4;
+  padding: 5px;
+  color: #be95c4;
+}
+
+.pie-pagina {
+  padding: 5px;
+  color: #473f69;
+}
+
+.foot-titles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foot-items-r {
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.foot-items {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo {
+  display: grid;
+  justify-content: center;
 }
 
 .icon-huella-foot {
-    width: 50px;
+  width: 90px;
+  margin-left: 1.5em;
 }
 
-@media(min-width: 1200px) {
-    .icon-huella-foot {
-        width: 150px;
-    }
+.derechos {
+  margin-top: 1em;
 }
 
-/*------------------------------ Páginas ------------------------------*/
-
-/* Style de INDEX/HOME */
-
-.h2-index {
-    color: black;
-    font-size: 30px;
+.r-item {
+  display: none;
 }
 
-.seccion-recetas-index {
-    text-align: right;
-    background-size: cover;
-    background-image: url("../img/perro-premio.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 30px;
-}
-
-.fondo-letra{
-    background-color: rgba(255, 255, 255, 0.384);
-    border-radius: 10px;
-}
-
-.articulos-index {
+@media (min-width: 1200px) {
+  .footer {
+    display: flex;
+  }
+  .redes {
+    padding: 10px;
+    display: grid;
+  }
+  .r-item {
+    display: flex;
+    align-items: center;
+  }
+  .pie-pagina {
+    padding: 10px;
+    display: grid;
+  }
+  ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  .foot-items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-}
-
-.articulo {
+    grid-template: repeat(2, fr);
+  }
+  .item-footer {
     grid-column: span 2;
-}
-
-.seccion-contenido {
-    text-align: right;
-    background-size: cover;
-    background-image: url("../img/tres-perros.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 30px;
-}
-
-@media(min-width: 1200px) {
-    .articulos-index {
-        display: flex;
-    }
-}
-
-/* Style de RECETAS */
-
-.seccion-receta {
-    display: flex;
-}
-
-.titulo-comida {
     display: flex;
     justify-content: center;
+  }
+}
+.card-tips {
+  font-size: 1rem;
+  padding: 0.5em;
+  display: flex;
+  align-items: center;
+  text-align: justify;
 }
 
-.ingredientes-pasos {
-    display: flex;
-    justify-content: space-between;
+.texto-card {
+  font-size: 1rem;
+  padding: 0.5em;
+}
+
+.card-icon {
+  background-color: rgba(206, 145, 255, 0.6352941176);
+  min-width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-icon i {
+  font-size: 1.8rem;
+  color: #473f69;
+}
+
+.servicios-card {
+  background-color: rgba(206, 145, 255, 0.6352941176);
+  background-position: center;
+  padding: 1em 1em;
+  border-radius: 20px;
+  border: solid 10px white;
+  text-align: center;
+  font-weight: solid;
 }
 
 .puntos {
-    list-style-type: circle;
+  list-style-type: circle;
 }
 
-/* Style de SERVICIOS */
-
-#tip-cachorros {
-    text-align: left;
-    background-size: cover;
-    background-image: url("../img/cachorro.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 2em 1em;
-    border-radius: 20px;
-    border: solid 10px white;
+.caja {
+  background-color: #e0b1cb;
+  border-radius: 5px;
+  border-style: unset;
+  border-color: black;
+  padding: 15px;
+  font-weight: 600;
+  gap: 50px;
 }
 
-#tip-juegos {
-    text-align: right;
-    background-size: contain;
-    background-image: url("../img/juegos-interactivos.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 2em 1em;
-    border: solid 10px white;
+.boton {
+  background-color: #be95c4;
+  color: black;
+  border-radius: 5px;
+  border-style: unset;
+  border-color: black;
+  padding: 15px;
+  font-weight: 600;
 }
 
-#tip-entrenamiento {
-    text-align: left;
-    background-size: contain;
-    background-image: url("../img/entrenamiento.jpg");
-    background-repeat: repeat;
-    background-position: center;
-    padding: 2em 1em;
-    border-radius: 20px;
-    border: solid 10px white;
+.boton:hover {
+  background-color: #5e548e;
 }
 
-.parrafos-tips {
-    display: flex;
-}
-
-/* Style de nosotros */
-
-.seccion-nosotros {
-    display: flex;
-}
-
-/* Style de Contacto */
-
-.seccion-contacto {
-    display: flex;
-    justify-content: space-between;
-}
-
-.ubicacion {
-    display: flex;
-    justify-content: center;
-}
+/*# sourceMappingURL=style.css.map */
