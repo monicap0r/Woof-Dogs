@@ -1,0 +1,89 @@
+.footer {
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.redes {
+    padding: 5px;
+    color: #be95c4;
+}
+
+.pie-pagina {
+    padding: 5px;
+    color: #473f69;
+}
+
+.foot-titles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot-items-r {
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.foot-items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    display: grid;
+    justify-content: center;
+}
+
+.icon-huella-foot {
+    width: 90px;
+    margin-left: 1.5em;
+}
+
+.derechos {
+    margin-top: 1em;
+}
+
+.r-item {
+    display: none;
+}
+
+@media(min-width: 1200px) {
+    .footer {
+        display: flex;
+    }
+
+    .redes {
+        padding: 10px;
+        display: grid;
+    }
+
+    .r-item {
+        display: flex;
+        align-items: center;
+    }
+
+    .pie-pagina {
+        padding: 10px;
+        display: grid;
+    }
+
+    ul {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+
+    .foot-items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template: repeat(2, fr);
+    }
+
+    .item-footer {
+        grid-column: span 2;
+        display: flex;
+        justify-content: center;
+
+    }
+}

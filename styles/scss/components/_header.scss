@@ -1,0 +1,113 @@
+.header {
+    font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+    color: #231942;
+    display: grid;
+    grid-template-columns: repeat (5, 1fr);
+    grid-template-rows: 0.5fr 1fr;
+    grid-template-areas: "lspace header header icon rspace"
+    "lspace nav nav nav rspace";
+    gap: 10px;
+    padding: 10px;
+}
+
+.titulo-header {
+    color: #5e548e;
+    font-weight: bold;
+    font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    grid-area: header;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-header {
+    display: flex;
+    grid-area: icon;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.barra-buscar {
+    display: none;
+}
+
+.nav-header {
+    background-color: #e0b1cb;
+    border-radius: 15px;
+    color: #231942;
+    display: flex;
+    grid-area: nav;
+    justify-content: center;    
+}
+
+.lista-header{
+    margin: 0;
+    padding-left: 0;
+}
+
+.item-header {
+    text-decoration: none;
+    font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+    color: #5e548e;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.selection-page {
+    font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #be95c4;
+    border-radius: 15px;
+    color: #473f69;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+@media(min-width: 1200px) {
+    .header {
+        padding: 25px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .titulo-header {
+        color: #5e548e;
+
+    }
+
+    .barra-buscar {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-header {
+        background-color: #e0b1cb;
+        border-radius: 10px;
+        color: #231942;
+        font-weight: bold;
+        gap: 20px;
+    }
+
+    .lista-header {
+        display: flex;
+    }
+
+    .item-header {
+        color: #5e548e;
+        font-weight: bold;
+        justify-content: space-around;
+        display: flex;
+        padding: 15px ;
+    }
+
+    .selection-page {
+        background-color: #be95c4;
+        color: #473f69;
+        border-radius: 10px;
+        display: flex;
+        padding: 15px ;
+    }
+}

@@ -1,0 +1,23 @@
+.caja{
+    background-color:#e0b1cb;
+    border-radius: 5px;
+    border-style:unset;
+    border-color: black;
+    padding: 15px;
+    font-weight: 600;
+    gap: 50px;
+}
+
+.boton{
+    background-color:#be95c4;
+    color: black;
+    border-radius: 5px;
+    border-style:unset;
+    border-color: black;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.boton:hover{
+    background-color:#5e548e;
+}

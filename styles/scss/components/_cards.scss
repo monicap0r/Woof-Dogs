@@ -1,0 +1,38 @@
+.card-tips {
+    font-size: 1rem;
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+}
+
+.texto-card{
+    font-size: 1rem;
+    padding: 0.5em;
+}
+
+.card-icon {
+    background-color: #ce91ffa2;
+    min-width: 60px;
+    height: 60px;
+    border-radius: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-icon i {
+    font-size: 1.8rem;
+    color: #473f69;
+}
+
+.servicios-card{
+    background-color: #ce91ffa2;
+    background-position: center;
+    padding: 1em 1em;
+    border-radius: 20px;
+    border: solid 10px white;
+    text-align: center;
+    font-weight: solid;
+}

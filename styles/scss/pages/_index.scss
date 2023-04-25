@@ -1,0 +1,56 @@
+.h2-index {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.seccion-recetas-index {
+    text-align: justify;
+    background-size: cover;
+    background-image: url("../../../img/perro-premio.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30px;
+}
+
+.articulos-index {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    text-align: justify;
+    padding: 5px;
+}
+
+.articulo {
+    grid-column: span 2;
+    padding: 15px;;
+}
+
+.img-imagen{
+    display: grid;
+    margin: 0;
+    align-content: center;
+    justify-content: center;
+}
+
+
+.seccion-contenido {
+    text-align: justify;
+    padding: 30px;
+    background-size: cover;
+    background-image: url("../../../img/tres-perros.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fondo-letra{
+    background-color: #ce91ffa2;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+@media(min-width: 1200px) {
+    .articulos-index {
+        display: flex;
+    }
+}

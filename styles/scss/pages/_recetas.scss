@@ -1,0 +1,62 @@
+.titulo-recetas {
+    text-align: center;
+    font-size: 2rem;
+    background-size: cover;
+    background-image: url("../../../img/perro-lengua.jpg");
+    background-position: center;
+    padding: 2em 1em;
+    border-radius: 20px;
+    border: solid 10px white;
+}
+
+.seccion-receta {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 2fr 4fr;
+    grid-template-areas: "lspace texto texto rspace"
+        "lspace texto texto rspace"
+        "img img img img";
+    gap: 5px;
+}
+
+.texto-recetas{
+    display: grid;
+    grid-area: texto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 3fr;
+    grid-template-areas: "titulo"
+        "ingredientes"
+        "pasos";
+    gap: 5px;
+    align-content: space-around;
+}
+
+.titulo-comida {
+    display: grid;
+    grid-area: titulo;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-ingredientes {
+    display: grid;
+    grid-area: ingredientes;
+    align-content: center;
+    justify-items: center;
+}
+
+.section-pasos {
+    display: grid;
+    grid-area: pasos;
+    align-content: center;
+    justify-items: center;
+}
+
+.img-insta {
+    display: grid;
+    grid-area: img;
+    align-content: center;
+    justify-content: center;
+}
