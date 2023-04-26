@@ -1,5 +1,4 @@
 .header {
-    font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
     color: #231942;
     display: grid;
     grid-template-columns: repeat (5, 1fr);
@@ -13,7 +12,6 @@
 .titulo-header {
     color: #5e548e;
     font-weight: bold;
-    font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     grid-area: header;
     margin: 0;
@@ -49,7 +47,6 @@
 
 .item-header {
     text-decoration: none;
-    font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
     color: #5e548e;
     display: grid;
     align-items: center;
@@ -57,7 +54,6 @@
 }
 
 .selection-page {
-    font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #be95c4;
     border-radius: 15px;
     color: #473f69;

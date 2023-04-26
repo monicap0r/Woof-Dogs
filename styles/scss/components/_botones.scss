@@ -16,8 +16,8 @@
     border-color: black;
     padding: 15px;
     font-weight: 600;
-}
 
-.boton:hover{
-    background-color:#5e548e;
+    &:hover{
+        background-color:#5e548e;
+    }
 }

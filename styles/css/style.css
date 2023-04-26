@@ -13,6 +13,10 @@ ul,
 ol {
   list-style-type: none;
 }
+ul a,
+ol a {
+  text-decoration: none;
+}
 
 h2 {
   padding: 20px;
@@ -283,7 +287,6 @@ h2 {
 }
 
 .header {
-  font-family: "Poppins", Tahoma, Geneva, Verdana, sans-serif;
   color: #231942;
   display: grid;
   grid-template-columns: repeat 5, 1fr;
@@ -296,7 +299,6 @@ h2 {
 .titulo-header {
   color: #5e548e;
   font-weight: bold;
-  font-family: "Poppins", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   grid-area: header;
   margin: 0;
@@ -332,7 +334,6 @@ h2 {
 
 .item-header {
   text-decoration: none;
-  font-family: "Poppins", Tahoma, Geneva, Verdana, sans-serif;
   color: #5e548e;
   display: grid;
   align-items: center;
@@ -340,7 +341,6 @@ h2 {
 }
 
 .selection-page {
-  font-family: "Poppins", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #be95c4;
   border-radius: 15px;
   color: #473f69;
@@ -530,7 +530,6 @@ h2 {
   padding: 15px;
   font-weight: 600;
 }
-
 .boton:hover {
   background-color: #5e548e;
 }
