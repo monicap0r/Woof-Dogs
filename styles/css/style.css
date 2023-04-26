@@ -227,22 +227,19 @@ h2 {
   border-radius: 20px;
   border: solid 10px white;
 }
-
-.art-nosotros {
+.nosotros-art {
   border: solid 10px white;
   text-align: center;
 }
-
-.titulo {
+.nosotros-titulo {
   padding: 10px;
 }
-
-.tamanio-img-n {
+.nosotros-img-tamanio {
   height: 300px;
 }
 
 @media (min-width: 1200px) {
-  .art-nosotros {
+  .nosotros-art {
     padding: 2em 2em;
     display: grid;
     grid-template-columns: 1fr 400px;
@@ -250,16 +247,16 @@ h2 {
     grid-template-areas: "texto imagen";
     align-items: center;
   }
-  .texto-nosotros {
+  .nosotros-art-texto {
     display: grid;
     grid-area: texto;
   }
-  .img-nosotros {
+  .nosotros-art-img {
     display: grid;
     grid-area: imagen;
     justify-items: center;
   }
-  .tamanio-img-n {
+  .nosotros-art-img-tamanio {
     height: 300px;
   }
 }

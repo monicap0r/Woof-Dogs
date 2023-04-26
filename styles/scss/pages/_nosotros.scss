@@ -7,44 +7,44 @@
     padding: 2em 1em;
     border-radius: 20px;
     border: solid 10px white;
-}
 
-.art-nosotros {
-    border: solid 10px white;
-    text-align: center;
-}
+    &-art {
+        border: solid 10px white;
+        text-align: center;
+    }
 
-.titulo {
-    padding: 10px;
-}
+    &-titulo {
+        padding: 10px;
+    }
 
-.tamanio-img-n{
-    height: 300px ;
+    &-img-tamanio {
+        height: 300px;
+    }
 }
 
 @media(min-width: 1200px) {
-    .art-nosotros {
+    .nosotros-art {
         padding: 2em 2em;
         display: grid;
         grid-template-columns: 1fr 400px;
         grid-template-rows: 400px;
         grid-template-areas: "texto imagen";
         align-items: center;
-    }
 
-    .texto-nosotros{
-        display: grid;
-        grid-area: texto;
-    }
+        &-texto {
+            display: grid;
+            grid-area: texto;
+        }
 
-    .img-nosotros{
-        display: grid;
-        grid-area: imagen;
-        justify-items: center;
-    }
+        &-img {
+            display: grid;
+            grid-area: imagen;
+            justify-items: center;
 
-    .tamanio-img-n{
-        height: 300px ;
+            &-tamanio{
+                height: 300px;
+            }
+        }
     }
 
 }
