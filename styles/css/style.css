@@ -228,13 +228,17 @@ h2 {
   border: solid 10px white;
 }
 
-.seccion-nosotros {
+.art-nosotros {
   border: solid 10px white;
   text-align: center;
 }
 
 .titulo {
   padding: 10px;
+}
+
+.tamanio-img-n {
+  height: 300px;
 }
 
 @media (min-width: 1200px) {
