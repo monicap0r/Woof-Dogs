@@ -9,7 +9,7 @@
     border: solid 10px white;
 }
 
-.cap-card{
+.cap-card {
     font-weight: bold;
     padding: 5px;
 }
@@ -21,16 +21,33 @@
     text-align: justify;
 }
 
-.imagen-articulo{
+.imagen-articulo {
     padding: 1em;
 }
 
-.tamanio-img{
+.tamanio-img {
     width: 100%;
 }
 
-.figure-caption{
+.figure-caption {
     text-align: center;
     font-style: italic;
     color: #231942;
+}
+
+@media(min-width: 1200px) {
+    .servicios {
+        display: flex;
+        justify-content: center;
+    }
+
+    .tamanio-img {
+        height: 700px;
+    }
+
+    .tips {
+        padding: 2em 1em;
+        border-radius: 20px;
+        border: solid 10px white;
+    }
 }

@@ -140,6 +140,28 @@ h2 {
   justify-content: center;
 }
 
+@media (min-width: 1200px) {
+  .seccion-receta {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: "texto texto img" "texto texto img";
+    gap: 5px;
+  }
+  .texto-recetas {
+    display: grid;
+    grid-area: texto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: "titulo titulo" "ingredientes pasos";
+    gap: 5px;
+    align-content: space-around;
+  }
+  .titulo-comida {
+    align-items: center;
+  }
+}
 .tips-servicios {
   text-align: center;
   font-size: 2rem;
@@ -177,6 +199,20 @@ h2 {
   color: #231942;
 }
 
+@media (min-width: 1200px) {
+  .servicios {
+    display: flex;
+    justify-content: center;
+  }
+  .tamanio-img {
+    height: 700px;
+  }
+  .tips {
+    padding: 2em 1em;
+    border-radius: 20px;
+    border: solid 10px white;
+  }
+}
 .nosotros {
   text-align: center;
   font-size: 2rem;
@@ -197,6 +233,28 @@ h2 {
   padding: 10px;
 }
 
+@media (min-width: 1200px) {
+  .art-nosotros {
+    padding: 2em 2em;
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    grid-template-rows: 400px;
+    grid-template-areas: "texto imagen";
+    align-items: center;
+  }
+  .texto-nosotros {
+    display: grid;
+    grid-area: texto;
+  }
+  .img-nosotros {
+    display: grid;
+    grid-area: imagen;
+    justify-items: center;
+  }
+  .tamanio-img-n {
+    height: 300px;
+  }
+}
 .seccion-contacto {
   padding: 20px;
   justify-content: center;

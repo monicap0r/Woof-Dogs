@@ -60,3 +60,30 @@
     align-content: center;
     justify-content: center;
 }
+
+@media(min-width: 1200px) {
+    .seccion-receta {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas: "texto texto img"
+            "texto texto img";
+        gap: 5px;
+    }
+
+    .texto-recetas{
+        display: grid;
+        grid-area: texto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas: "titulo titulo"
+            "ingredientes pasos";
+        gap: 5px;
+        align-content: space-around;
+    }
+
+    .titulo-comida{
+        align-items: center;
+    }
+}
