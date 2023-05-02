@@ -4,62 +4,66 @@
     grid-template-columns: repeat (5, 1fr);
     grid-template-rows: 0.5fr 1fr;
     grid-template-areas: "lspace header header icon rspace"
-    "lspace nav nav nav rspace";
+        "lspace nav nav nav rspace";
     gap: 10px;
     padding: 10px;
-}
 
-.titulo-header {
-    color: #5e548e;
-    font-weight: bold;
-    display: flex;
-    grid-area: header;
-    margin: 0;
-    align-items: center;
-    justify-content: center;
-}
+    &-titulo {
+        color: #5e548e;
+        font-weight: bold;
+        display: flex;
+        grid-area: header;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+    }
 
-.icon-header {
-    display: flex;
-    grid-area: icon;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-}
+    &-icon {
+        display: flex;
+        grid-area: icon;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
 
-.barra-buscar {
-    display: none;
-}
+        &-img {
+            width: 40px;
+        }
+    }
 
-.nav-header {
-    background-color: #e0b1cb;
-    border-radius: 15px;
-    color: #231942;
-    display: flex;
-    grid-area: nav;
-    justify-content: center;    
-}
+    &-nav {
+        background-color: #e0b1cb;
+        border-radius: 15px;
+        color: #231942;
+        display: flex;
+        grid-area: nav;
+        justify-content: center;
 
-.lista-header{
-    margin: 0;
-    padding-left: 0;
-}
+        &-lista {
+            margin: 0;
+            padding-left: 0;
 
-.item-header {
-    text-decoration: none;
-    color: #5e548e;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-}
+            &-item {
+                text-decoration: none;
+                color: #5e548e;
+                display: grid;
+                align-items: center;
+                justify-items: center;
+            }
 
-.selection-page {
-    background-color: #be95c4;
-    border-radius: 15px;
-    color: #473f69;
-    display: grid;
-    align-items: center;
-    justify-items: center;
+            &-seleccion {
+                background-color: #be95c4;
+                border-radius: 15px;
+                color: #473f69;
+                display: grid;
+                align-items: center;
+                justify-items: center;
+            }
+        }
+    }
+
+    &-busqueda {
+        display: none;
+    }
 }
 
 @media(min-width: 1200px) {
@@ -67,43 +71,42 @@
         padding: 25px;
         display: flex;
         justify-content: space-between;
-    }
 
-    .titulo-header {
-        color: #5e548e;
+        &-titulo {
+            color: #5e548e;
+        }
 
-    }
+        &-nav {
+            background-color: #e0b1cb;
+            border-radius: 10px;
+            color: #231942;
+            font-weight: bold;
+            gap: 20px;
 
-    .barra-buscar {
-        display: flex;
-        align-items: center;
-    }
+            &-lista {
+                display: flex;
 
-    .nav-header {
-        background-color: #e0b1cb;
-        border-radius: 10px;
-        color: #231942;
-        font-weight: bold;
-        gap: 20px;
-    }
+                &-item {
+                    color: #5e548e;
+                    font-weight: bold;
+                    justify-content: space-around;
+                    display: flex;
+                    padding: 15px;
+                }
 
-    .lista-header {
-        display: flex;
-    }
+                &-seleccion {
+                    background-color: #be95c4;
+                    color: #473f69;
+                    border-radius: 10px;
+                    display: flex;
+                    padding: 15px;
+                }
+            }
+        }
 
-    .item-header {
-        color: #5e548e;
-        font-weight: bold;
-        justify-content: space-around;
-        display: flex;
-        padding: 15px ;
-    }
-
-    .selection-page {
-        background-color: #be95c4;
-        color: #473f69;
-        border-radius: 10px;
-        display: flex;
-        padding: 15px ;
+        &-busqueda {
+            display: flex;
+            align-items: center;
+        }
     }
 }
