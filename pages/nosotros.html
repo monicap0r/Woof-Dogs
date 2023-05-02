@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../styles/css/style.css">
     <link rel="icon" type="image/x-icon" href="../img/huella.png">
-    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <meta name="description" content="Te presentamos quienes estan siempre en este proyecto, las personas que acompañaran a tu perro en todos nuestros servicios.">
     
     <title>Woof Dogs | Conoce nuestro Equipo</title>
@@ -21,10 +22,10 @@
         <h1 class="titulo-header">WOOF DOGS</h1>
 
         <figure class="icon-header">
-            <img src="../img/huella.png" alt="icon huella" width="40">
+            <img data-aos="flip-right" src="../img/huella.png" alt="icon huella" width="40">
         </figure>
 
-        <nav class="nav-header">
+        <nav data-aos="zoom-in-down" class="nav-header">
             <ul class="lista-header">
                 <li class="item-header"><a href="../index.html">Home</a></li>
                 <li class="item-header"><a href="./recetas.html">Recetas</a></li>
@@ -138,13 +139,17 @@
         <!-- Logo huella -->
 
         <div class="logo">
-            <img class="icon-huella-foot" src="../img/huella.png" alt="icon huella">
+            <img data-aos="flip-right" class="icon-huella-foot" src="../img/huella.png" alt="icon huella">
             <p class="derechos"> Woof Dogs © 2023 </p>
         </div>
 
 
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
