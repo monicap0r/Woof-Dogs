@@ -9,60 +9,60 @@
     border: solid 10px white;
 }
 
-.seccion-receta {
+.receta {
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 2fr 4fr;
+    grid-template-rows: 1fr 2fr 3fr;
     grid-template-areas: "lspace texto texto rspace"
         "lspace texto texto rspace"
         "img img img img";
     gap: 5px;
-}
 
-.texto-recetas{
-    display: grid;
-    grid-area: texto;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 3fr;
-    grid-template-areas: "titulo"
-        "ingredientes"
-        "pasos";
-    gap: 5px;
-    align-content: space-around;
-}
+    &-texto{
+        display: grid;
+        grid-area: texto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 3fr;
+        grid-template-areas: "titulo"
+            "ingredientes"
+            "pasos";
+        gap: 5px;
+        align-content: space-around;
 
-.titulo-comida {
-    display: grid;
-    grid-area: titulo;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-}
+        &-titulo {
+            display: grid;
+            grid-area: titulo;
+            align-content: center;
+            justify-content: center;
+            text-align: center;
+        }
 
-.section-ingredientes {
-    display: grid;
-    grid-area: ingredientes;
-    align-content: center;
-    justify-items: center;
-}
+        &-ingredientes {
+            display: grid;
+            grid-area: ingredientes;
+            align-content: start;
+            justify-items: center;
+        }
 
-.section-pasos {
-    display: grid;
-    grid-area: pasos;
-    align-content: center;
-    justify-items: center;
-}
+        &-pasos {
+            display: grid;
+            grid-area: pasos;
+            align-content: start;
+            justify-items: center;
+        }
+    }
 
-.img-insta {
-    display: grid;
-    grid-area: img;
-    align-content: center;
-    justify-content: center;
+    &-img {
+        display: grid;
+        grid-area: img;
+        align-content: center;
+        justify-content: center;
+    }
 }
 
 @media(min-width: 1200px) {
-    .seccion-receta {
+    .receta {
         padding: 20px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -70,20 +70,20 @@
         grid-template-areas: "texto texto img"
             "texto texto img";
         gap: 5px;
-    }
 
-    .texto-recetas{
-        display: grid;
-        grid-area: texto;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 2fr;
-        grid-template-areas: "titulo titulo"
-            "ingredientes pasos";
-        gap: 5px;
-        align-content: space-around;
-    }
+        &-texto{
+            display: grid;
+            grid-area: texto;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 2fr;
+            grid-template-areas: "titulo titulo"
+                "ingredientes pasos";
+            gap: 5px;
+            align-content: space-around;
 
-    .titulo-comida{
-        align-items: center;
+            &-titulo{
+                align-items: center;
+            }
+        }
     }
 }

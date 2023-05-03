@@ -1,58 +1,69 @@
-.h2-index {
-    color: black;
-    font-size: 30px;
-    font-weight: bold;
-}
+.index {
 
-.seccion-recetas-index {
-    text-align: justify;
-    background-size: cover;
-    background-image: url("../../../img/perro-premio.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 30px;
-}
+    &-seccion-recetas {
+        text-align: justify;
+        background-size: cover;
+        background-image: url("../../../img/perro-premio.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 30px;
+    }
 
-.articulos-index {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    text-align: justify;
-    padding: 5px;
-}
+    &-h2 {
+        color: black;
+        font-size: 30px;
+        font-weight: bold;
+    }
 
-.articulo {
-    grid-column: span 3;
-    padding: 15px;
-}
+    &-titulo {
+        font-size: 20px;
+        font-weight: 540;
+    }
 
-.img-imagen{
-    display: grid;
-    grid-column: span 3;
-    margin: 0;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-}
+    &-articulo {
+        background-color: #ce91ffa2;
+        border-radius: 10px;
+        padding: 5px;
+    }
 
+    &-articulos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        text-align: justify;
+        padding: 5px;
 
-.seccion-contenido {
-    text-align: justify;
-    padding: 30px;
-    background-size: cover;
-    background-image: url("../../../img/tres-perros.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-}
+        &-articulo {
+            grid-column: span 3;
+            padding: 15px;
+        }
 
-.fondo-letra{
-    background-color: #ce91ffa2;
-    border-radius: 10px;
-    padding: 5px;
+        &-figura {
+            display: grid;
+            grid-column: span 3;
+            margin: 0;
+            align-content: center;
+            justify-content: center;
+            text-align: center;
+
+            &-img {
+                width: 200px;
+            }
+        }
+    }
+
+    &-seccion-contenido {
+        text-align: justify;
+        padding: 30px;
+        background-size: cover;
+        background-image: url("../../../img/tres-perros.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 }
 
 @media(min-width: 1200px) {
-    .articulos-index {
+    .index-articulos {
         display: flex;
     }
 }

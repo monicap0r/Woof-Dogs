@@ -1,26 +1,32 @@
-.seccion-contacto {
-    padding: 20px;
+.contacto {
+    padding: 50px;
     justify-content: center;
-}
 
-.visit{
-    text-align: justify;
-}
+    &-visitanos{
+        text-align: justify;
 
-.ubicacion {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-}
+        &-ubicacion {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+    }
 
-.form-linea{
-    display: flex;
-    padding: 5px;
-    justify-content: center;
-}
+    &-seccion{
 
-.boton-centro{
-    display: flex;
-    padding: 5px;
-    justify-content: center;
+        &-formulario{
+
+            &-input{
+                display: flex;
+                padding: 5px;
+                justify-content: center;
+            }
+
+            &-boton{
+                display: flex;
+                padding: 5px;
+                justify-content: center;
+            }
+        }
+    }
 }

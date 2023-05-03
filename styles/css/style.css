@@ -25,18 +25,7 @@ h2 {
   color: #5e548e;
 }
 
-.titulo-importante {
-  font-size: 20px;
-  font-weight: 540;
-}
-
-.h2-index {
-  color: black;
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.seccion-recetas-index {
+.index-seccion-recetas {
   text-align: justify;
   background-size: cover;
   background-image: url("../../../img/perro-premio.jpg");
@@ -44,21 +33,32 @@ h2 {
   background-position: center;
   padding: 30px;
 }
-
-.articulos-index {
+.index-h2 {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+}
+.index-titulo {
+  font-size: 20px;
+  font-weight: 540;
+}
+.index-articulo {
+  background-color: rgba(206, 145, 255, 0.6352941176);
+  border-radius: 10px;
+  padding: 5px;
+}
+.index-articulos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   text-align: justify;
   padding: 5px;
 }
-
-.articulo {
+.index-articulos-articulo {
   grid-column: span 3;
   padding: 15px;
 }
-
-.img-imagen {
+.index-articulos-figura {
   display: grid;
   grid-column: span 3;
   margin: 0;
@@ -66,8 +66,10 @@ h2 {
   justify-content: center;
   text-align: center;
 }
-
-.seccion-contenido {
+.index-articulos-figura-img {
+  width: 200px;
+}
+.index-seccion-contenido {
   text-align: justify;
   padding: 30px;
   background-size: cover;
@@ -76,14 +78,8 @@ h2 {
   background-position: center;
 }
 
-.fondo-letra {
-  background-color: rgba(206, 145, 255, 0.6352941176);
-  border-radius: 10px;
-  padding: 5px;
-}
-
 @media (min-width: 1200px) {
-  .articulos-index {
+  .index-articulos {
     display: flex;
   }
 }
@@ -98,16 +94,15 @@ h2 {
   border: solid 10px white;
 }
 
-.seccion-receta {
+.receta {
   padding: 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 2fr 4fr;
+  grid-template-rows: 1fr 2fr 3fr;
   grid-template-areas: "lspace texto texto rspace" "lspace texto texto rspace" "img img img img";
   gap: 5px;
 }
-
-.texto-recetas {
+.receta-texto {
   display: grid;
   grid-area: texto;
   grid-template-columns: 1fr;
@@ -116,30 +111,26 @@ h2 {
   gap: 5px;
   align-content: space-around;
 }
-
-.titulo-comida {
+.receta-texto-titulo {
   display: grid;
   grid-area: titulo;
   align-content: center;
   justify-content: center;
   text-align: center;
 }
-
-.section-ingredientes {
+.receta-texto-ingredientes {
   display: grid;
   grid-area: ingredientes;
-  align-content: center;
+  align-content: start;
   justify-items: center;
 }
-
-.section-pasos {
+.receta-texto-pasos {
   display: grid;
   grid-area: pasos;
-  align-content: center;
+  align-content: start;
   justify-items: center;
 }
-
-.img-insta {
+.receta-img {
   display: grid;
   grid-area: img;
   align-content: center;
@@ -147,7 +138,7 @@ h2 {
 }
 
 @media (min-width: 1200px) {
-  .seccion-receta {
+  .receta {
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -155,7 +146,7 @@ h2 {
     grid-template-areas: "texto texto img" "texto texto img";
     gap: 5px;
   }
-  .texto-recetas {
+  .receta-texto {
     display: grid;
     grid-area: texto;
     grid-template-columns: 1fr 1fr;
@@ -164,11 +155,11 @@ h2 {
     gap: 5px;
     align-content: space-around;
   }
-  .titulo-comida {
+  .receta-texto-titulo {
     align-items: center;
   }
 }
-.tips-servicios {
+.tys-h2 {
   text-align: center;
   font-size: 2rem;
   background-size: cover;
@@ -179,27 +170,27 @@ h2 {
   border: solid 10px white;
 }
 
-.cap-card {
+.servicios-tarjeta-img {
+  width: 100%;
+}
+.servicios-tarjeta-cap {
   font-weight: bold;
   padding: 5px;
 }
 
-.descripcion-tip {
+.tips-articulos-descripcion {
   color: #5e548e;
   font-size: 1rem;
   padding: 1em;
   text-align: justify;
 }
-
-.imagen-articulo {
+.tips-articulos-figura {
   padding: 1em;
 }
-
-.tamanio-img {
+.tips-articulos-figura-img {
   width: 100%;
 }
-
-.figure-caption {
+.tips-articulos-figura-caption {
   text-align: center;
   font-style: italic;
   color: #231942;
@@ -210,13 +201,16 @@ h2 {
     display: flex;
     justify-content: center;
   }
-  .tamanio-img {
+  .servicios-tarjeta-img {
     height: 700px;
   }
   .tips {
     padding: 2em 1em;
     border-radius: 20px;
     border: solid 10px white;
+  }
+  .tips-articulos-figura-img {
+    height: 700px;
   }
 }
 .nosotros {
@@ -262,28 +256,24 @@ h2 {
     height: 300px;
   }
 }
-.seccion-contacto {
-  padding: 20px;
+.contacto {
+  padding: 50px;
   justify-content: center;
 }
-
-.visit {
+.contacto-visitanos {
   text-align: justify;
 }
-
-.ubicacion {
+.contacto-visitanos-ubicacion {
   padding: 20px;
   display: flex;
   justify-content: center;
 }
-
-.form-linea {
+.contacto-seccion-formulario-input {
   display: flex;
   padding: 5px;
   justify-content: center;
 }
-
-.boton-centro {
+.contacto-seccion-formulario-boton {
   display: flex;
   padding: 5px;
   justify-content: center;
@@ -475,20 +465,29 @@ h2 {
     justify-content: center;
   }
 }
-.card-tips {
+.card-icon i {
+  font-size: 1.8rem;
+  color: #473f69;
+}
+
+.servicios-tarjeta {
+  background-color: rgba(206, 145, 255, 0.6352941176);
+  background-position: center;
+  padding: 1em 1em;
+  border-radius: 20px;
+  border: solid 10px white;
+  text-align: center;
+  font-weight: solid;
+}
+
+.tips-articulos-contenido-tarjeta {
   font-size: 1rem;
   padding: 0.5em;
   display: flex;
   align-items: center;
   text-align: justify;
 }
-
-.texto-card {
-  font-size: 1rem;
-  padding: 0.5em;
-}
-
-.card-icon {
+.tips-articulos-contenido-tarjeta-icon {
   background-color: rgba(206, 145, 255, 0.6352941176);
   min-width: 60px;
   height: 60px;
@@ -497,20 +496,9 @@ h2 {
   justify-content: center;
   align-items: center;
 }
-
-.card-icon i {
-  font-size: 1.8rem;
-  color: #473f69;
-}
-
-.servicios-card {
-  background-color: rgba(206, 145, 255, 0.6352941176);
-  background-position: center;
-  padding: 1em 1em;
-  border-radius: 20px;
-  border: solid 10px white;
-  text-align: center;
-  font-weight: solid;
+.tips-articulos-contenido-tarjeta-texto {
+  font-size: 1rem;
+  padding: 0.5em;
 }
 
 .puntos {
