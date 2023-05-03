@@ -1,5 +1,5 @@
 .header {
-    color: #231942;
+    color: $color-secundario;
     display: grid;
     grid-template-columns: repeat (5, 1fr);
     grid-template-rows: 0.5fr 1fr;
@@ -9,7 +9,7 @@
     padding: 10px;
 
     &-titulo {
-        color: #5e548e;
+        color: $color-primario;
         font-weight: bold;
         display: flex;
         grid-area: header;
@@ -31,9 +31,9 @@
     }
 
     &-nav {
-        background-color: #e0b1cb;
+        background-color: $color-complementario;
         border-radius: 15px;
-        color: #231942;
+        color: $color-secundario;
         display: flex;
         grid-area: nav;
         justify-content: center;
@@ -44,16 +44,16 @@
 
             &-item {
                 text-decoration: none;
-                color: #5e548e;
+                color: $color-primario;
                 display: grid;
                 align-items: center;
                 justify-items: center;
             }
 
             &-seleccion {
-                background-color: #be95c4;
+                background-color: $color-terciario;
                 border-radius: 15px;
-                color: #473f69;
+                color: $color-cuaternario;
                 display: grid;
                 align-items: center;
                 justify-items: center;
@@ -73,13 +73,13 @@
         justify-content: space-between;
 
         &-titulo {
-            color: #5e548e;
+            color: $color-primario;
         }
 
         &-nav {
-            background-color: #e0b1cb;
+            background-color: $color-complementario;
             border-radius: 10px;
-            color: #231942;
+            color: $color-secundario;
             font-weight: bold;
             gap: 20px;
 
@@ -87,7 +87,7 @@
                 display: flex;
 
                 &-item {
-                    color: #5e548e;
+                    color: $color-primario;
                     font-weight: bold;
                     justify-content: space-around;
                     display: flex;
@@ -95,8 +95,8 @@
                 }
 
                 &-seleccion {
-                    background-color: #be95c4;
-                    color: #473f69;
+                    background-color: $color-terciario;
+                    color: $color-cuaternario;
                     border-radius: 10px;
                     display: flex;
                     padding: 15px;

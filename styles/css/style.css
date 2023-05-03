@@ -465,11 +465,6 @@ h2 {
     justify-content: center;
   }
 }
-.card-icon i {
-  font-size: 1.8rem;
-  color: #473f69;
-}
-
 .servicios-tarjeta {
   background-color: rgba(206, 145, 255, 0.6352941176);
   background-position: center;
@@ -495,6 +490,10 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.tips-articulos-contenido-tarjeta-icon i {
+  font-size: 1.8rem;
+  color: #473f69;
 }
 .tips-articulos-contenido-tarjeta-texto {
   font-size: 1rem;
