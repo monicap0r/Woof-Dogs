@@ -33,7 +33,6 @@
     &-nav {
         background-color: $color-complementario;
         border-radius: 15px;
-        color: $color-secundario;
         display: flex;
         grid-area: nav;
         justify-content: center;
@@ -41,7 +40,6 @@
         &-lista {
             margin: 0;
             padding-left: 0;
-            color: $color-secundario;
 
             &-item {
                 text-decoration: none;
